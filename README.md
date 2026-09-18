@@ -50,6 +50,7 @@ $$Z = D \cdot Q + R \quad (0 \le R < |D|)$$
 ├── LICENSE
 └── README.md
 
+---
 
 ## 📊 Simulation & Waveforms
 Execution Results
