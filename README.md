@@ -42,8 +42,7 @@ Execution Results
 Cycle-accurate handshaking and verification against randomized test vectors:
 
 <p align=“center”>
-
-<img src=“assets/result.png” alt=“Computation Results” width=“75%”/>
+<img src="assets/result.png" alt="Computation Results" width="75%"/>
 
 </p>
 Waveforms (GTKWave)
@@ -52,7 +51,7 @@ Timing diagrams demonstrating execution for both unsigned and signed divider con
 
 <p align=“center”>
 
-<img src=“assets/waveform.png” alt=“Waveform of Divider” width=“95%”/>
+<img src="assets/waveform.png" alt="Waveform of Divider" width="95%"/>
 
 </p>
 
