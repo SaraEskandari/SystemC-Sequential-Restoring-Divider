@@ -1,13 +1,18 @@
-# 1. Ignore Makefiles & Build files from language stats
+# Ignore all Makefiles across all subdirectories
+**/Makefile linguist-vendored
+**/Makefile.* linguist-vendored
+**/*.mk linguist-vendored
 Makefile linguist-vendored
-Makefile.* linguist-vendored
-*.mk linguist-vendored
-CMakeLists.txt linguist-vendored
-*.cmake linguist-vendored
 
-# 2. Treat all C/C++ files strictly as C++
-*.h linguist-language=C++
-*.hpp linguist-language=C++
-*.cpp linguist-language=C++
-*.c linguist-language=C++
+# Ignore build and config files
+**/CMakeLists.txt linguist-vendored
+**/*.cmake linguist-vendored
+**/*.json linguist-vendored
+**/*.ts linguist-vendored
+
+# Force all C/C++ source and header files to be detected as C++
+**/*.h linguist-language=C++
+**/*.hpp linguist-language=C++
+**/*.cpp linguist-language=C++
+**/*.c linguist-language=C++
 
