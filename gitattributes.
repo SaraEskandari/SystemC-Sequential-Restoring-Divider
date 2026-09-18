@@ -1,0 +1,11 @@
+# Ignore Makefiles and Build scripts in GitHub Language Stats
+Makefile linguist-vendored
+Makefile.* linguist-vendored
+*.mk linguist-vendored
+CMakeLists.txt linguist-documentation
+*.cmake linguist-documentation
+
+# Treat source files as C++
+*.cpp linguist-detectable=true
+*.h linguist-detectable=true
+*.hpp linguist-detectable=true
