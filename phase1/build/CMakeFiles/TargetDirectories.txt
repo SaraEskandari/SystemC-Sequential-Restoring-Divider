@@ -1,0 +1,3 @@
+/mnt/f/sara/uni/master/T2/VHDL/sara/ca3/phase1/build/CMakeFiles/main_wrapper.dir
+/mnt/f/sara/uni/master/T2/VHDL/sara/ca3/phase1/build/CMakeFiles/edit_cache.dir
+/mnt/f/sara/uni/master/T2/VHDL/sara/ca3/phase1/build/CMakeFiles/rebuild_cache.dir
