@@ -50,7 +50,7 @@ $$Z = D \cdot Q + R \quad (0 \le R < |D|)$$
 ├── LICENSE
 └── README.md
 
-📊 Simulation & Waveforms
+## 📊 Simulation & Waveforms
 Execution Results
 
 Cycle-accurate handshaking and verification against randomized test vectors:
