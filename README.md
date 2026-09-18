@@ -69,7 +69,3 @@ Timing diagrams demonstrating execution for both unsigned and signed divider con
 
 ---
 
-## 📚 References
-
-1. **[1]** D. A. Patterson and J. L. Hennessy, *Computer Organization and Design: The Hardware/Software Interface*, 5th ed. Waltham, MA: Morgan Kaufmann, 2014.
-2. **[2]** IEEE Standard for Standard SystemC Language Reference Manual, *IEEE Std 1666-2011*, Jan. 2012.
