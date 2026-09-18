@@ -35,22 +35,6 @@ $$Z = D \cdot Q + R \quad (0 \le R < |D|)$$
 
 ---
 
-## 📂 Repository Structure
-
-```text
-├── assets/                          # Schematics, waveforms & logs
-│   ├── top view of unsigned divider.png
-│   ├── unsigned divider.png
-│   ├── wrapper.png
-│   ├── waveform.png
-│   └── result.png
-├── phase1/                          # Unsigned RTL (Datapath & FSM)
-├── phase3_bfm/                      # Signed Wrapper, BFM & Co-Simulation
-├── .gitignore
-├── LICENSE
-└── README.md
-
----
 
 ## 📊 Simulation & Waveforms
 Execution Results
