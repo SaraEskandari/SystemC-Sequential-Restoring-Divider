@@ -1,6 +1,6 @@
 # Parameterized Sequential Restoring Divider in SystemC
 
-A cycle-accurate hardware design of a sequential restoring divider in **SystemC (C++17)**, spanning RTL architecture, signed wrapper, Bus-Functional Model (BFM), and co-simulation verification.
+A cycle-accurate hardware design of a sequential restoring divider in **SystemC**, spanning RTL architecture, signed wrapper, Bus-Functional Model (BFM), and co-simulation verification.
 
 ---
 
