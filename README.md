@@ -17,10 +17,7 @@ A fully parameterized, cycle-accurate sequential restoring divider hardware arch
   - [Phase 3: Bus-Functional Modeling (BFM)](#phase-3-bus-functional-modeling-bfm)
   - [Phase 4: Co-Simulation & Trace Alignment](#phase-4-co-simulation--trace-alignment)
 - [Mathematical Background & Algorithm](#-mathematical-background--algorithm)
-- [Repository Structure](#-repository-structure)
-- [Build & Simulation Guide](#-build--simulation-guide)
 - [Waveform Verification](#-waveform-verification)
-- [References](#-references)
 
 ---
 
@@ -89,58 +86,7 @@ $$Z = D \cdot Q + R \quad \text{such that} \quad 0 \le R < |D|$$
 
 ---
 
-## 📂 Repository Structure
-```text
-├── assets/                          # Architecture schematics & state diagrams
-│   ├── top view of unsigned divider.png
-│   ├── unsigned divider.png
-│   └── wrapper.png
-├── phase1/                          # Phase 1: Unsigned RTL SystemC Design
-│   ├── datapath.h / datapath.cpp
-│   ├── controller.h / controller.cpp
-│   ├── dividertop.h / dividertop.cpp
-│   └── tb_phase1.cpp
-├── phase3_bfm/                      # Phase 3 & 4: Signed BFM & Co-Simulation
-│   ├── divider_bfm.h / divider_bfm.cpp
-│   ├── signed_wrapper.h / signed_wrapper.cpp
-│   └── tb_cosimulation.cpp
-├── .gitignore
-├── LICENSE
-└── README.md
 
----
-
-## ⚙️ Build & Simulation Guide
-
-### Prerequisites
-* **C++ Compiler:** `g++` (GCC 9.0+) or `clang++` with C++17 support.
-* **SystemC Library:** Accellera SystemC 2.3.3 or higher.
-* **Waveform Viewer:** GTKWave.
-
-### Compilation
-Set your `SYSTEMC_HOME` environment variable and compile using `g++`:
-
-bash
-# Set SystemC installation directory
-export SYSTEMC_HOME=/usr/local/systemc-2.3.3
-
-# Compile Phase 1 (Unsigned RTL)
-g++ -std=c++17 -I${SYSTEMC_HOME}/include -L${SYSTEMC_HOME}/lib-linux64 \
-phase1/*.cpp -lsystemc -lm -o run_phase1
-
-# Compile Phase 4 (Co-Simulation & BFM)
-g++ -std=c++17 -I${SYSTEMC_HOME}/include -L${SYSTEMC_HOME}/lib-linux64 \
-phase3_bfm/*.cpp -lsystemc -lm -o run_cosim
-
-### Execution & Waveform Inspection
-bash
-# Run simulation executable
-./run_cosim
-
-# Open trace in GTKWave
-gtkwave Divider_Waveform.vcd
-
----
 
 ## 📊 Waveform Verification
 
