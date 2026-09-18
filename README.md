@@ -8,13 +8,13 @@ A cycle-accurate hardware design of a sequential restoring divider in **SystemC 
 
 | Top View | Unsigned Divider (Datapath & FSM) |
 | :---: | :---: |
-| ![Top View](assets/top%20view%20of%20unsigned%20divider.png) | ![Unsigned Divider](assets/unsigned%20divider.png) |
+| <img src="assets/top%20view%20of%20unsigned%20divider.png" alt="Top View" width="100%"/> | <img src="assets/unsigned%20divider.png" alt="Unsigned Divider" width="100%"/> |
 
 ### Signed Wrapper Architecture
 Encapsulates the unsigned RTL core with 2's complement logic to handle signed operands without modifying the internal core:
 
 <p align="center">
-  <img src="assets/wrapper.png" alt="Signed Wrapper" width="75%">
+  <img src="assets/wrapper.png" alt="Signed Wrapper" width="75%"/>
 </p>
 
 ---
@@ -36,6 +36,7 @@ $$Z = D \cdot Q + R \quad (0 \le R < |D|)$$
 ---
 
 ## 📂 Repository Structure
+
 ```text
 ├── assets/                          # Schematics, waveforms & logs
 │   ├── top view of unsigned divider.png
@@ -48,24 +49,3 @@ $$Z = D \cdot Q + R \quad (0 \le R < |D|)$$
 ├── .gitignore
 ├── LICENSE
 └── README.md
-
----
-
-## 📊 Simulation & Waveforms
-
-### Execution Results
-Cycle-accurate handshaking and verification against randomized test vectors:
-
-<p align="center">
-  <img src="assets/result.png" alt="Computation Results" width="70%">
-</p>
-
-### Waveforms (GTKWave)
-Timing diagrams demonstrating execution for both unsigned and signed divider configurations:
-
-<p align="center">
-  <img src="assets/waveform.png" alt="Waveform of Divider" width="95%">
-</p>
-
----
-
