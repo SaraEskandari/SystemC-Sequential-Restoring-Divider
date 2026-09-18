@@ -1,3 +1,5 @@
+
+
 # Parameterized Sequential Restoring Divider in SystemC
 
 A cycle-accurate hardware design of a sequential restoring divider in **SystemC (C++17)**, spanning RTL architecture, signed wrapper, Bus-Functional Model (BFM), and co-simulation verification.
@@ -36,7 +38,6 @@ $$Z = D \cdot Q + R \quad (0 \le R < |D|)$$
 ---
 
 ## 📂 Repository Structure
-
 ```text
 ├── assets/                          # Schematics, waveforms & logs
 │   ├── top view of unsigned divider.png
@@ -50,22 +51,22 @@ $$Z = D \cdot Q + R \quad (0 \le R < |D|)$$
 ├── LICENSE
 └── README.md
 
-## 📊 Simulation & Waveforms
-Execution Results
+---
 
+## 📊 Simulation & Waveforms
+
+### Execution Results
 Cycle-accurate handshaking and verification against randomized test vectors:
 
-<p align=“center”>
-
-<img src=“assets/result.png” alt=“Computation Results” width=“75%”/>
-
+<p align="center">
+  <img src="assets/result.png" alt="Computation Results" width="75%"/>
 </p>
-Waveforms (GTKWave)
 
+### Waveforms (GTKWave)
 Timing diagrams demonstrating execution for both unsigned and signed divider configurations:
 
-<p align=“center”>
-
-<img src=“assets/waveform.png” alt=“Waveform of Divider” width=“95%”/>
-
+<p align="center">
+  <img src="assets/waveform.png" alt="Waveform of Divider" width="95%"/>
 </p>
+
+---
