@@ -2,10 +2,10 @@
 Makefile linguist-vendored
 Makefile.* linguist-vendored
 *.mk linguist-vendored
-CMakeLists.txt linguist-documentation
-*.cmake linguist-documentation
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
 
-# Treat source files as C++
-*.cpp linguist-detectable=true
-*.h linguist-detectable=true
-*.hpp linguist-detectable=true
+# Force all headers and source files to be recognized as C++
+*.h linguist-language=C++
+*.hpp linguist-language=C++
+*.cpp linguist-language=C++
