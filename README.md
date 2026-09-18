@@ -38,23 +38,26 @@ $$Z = D \cdot Q + R \quad (0 \le R < |D|)$$
 
 
 ## 📊 Simulation & Waveforms
-Execution Results
-
-Cycle-accurate handshaking and verification against randomized test vectors:
+### Execution & Verification Results
+The SystemC model was verified using cycle-accurate stimulus containing corner cases and randomized 16-bit operands. Output quotients and remainders are validated against reference algorithmic models to ensure mathematical correctness:
 
 <p align="center">
   <img src="assets/result.png" alt="Computation Results" width="75%"/>
 </p>
 
-Waveforms (GTKWave)
+---
 
-Timing diagrams demonstrating execution for both unsigned and signed divider configurations:
+### GTKWave Timing Diagrams
+The VCD traces illustrate the sequential execution, multi-cycle restoring operations, and standard valid/ready handshaking interfaces:
+
+* **Unsigned Restoring Divider:** Shows sequential 16-cycle shift-subtract-restore execution with `start` pulse assertion and `ready` flag signaling computation completion.
 
 
 <p align="center">
   <img src="assets/unsigned.png" alt=“Waveform of Unsigned Divider” width="75%"/>
 </p>
 
+* **Signed 2's Complement Wrapper:** Demonstrates sign extraction, magnitude division, and subsequent sign restoration/correction for negative dividend/divisor permutations.
 <p align="center">
   <img src="assets/signed.png" alt=“Waveform of signed Divider” width="75%"/>
 </p>
