@@ -1,11 +1,13 @@
-# Ignore Makefiles and Build scripts in GitHub Language Stats
+# 1. Ignore Makefiles & Build files from language stats
 Makefile linguist-vendored
 Makefile.* linguist-vendored
 *.mk linguist-vendored
 CMakeLists.txt linguist-vendored
 *.cmake linguist-vendored
 
-# Force all headers and source files to be recognized as C++
+# 2. Treat all C/C++ files strictly as C++
 *.h linguist-language=C++
 *.hpp linguist-language=C++
 *.cpp linguist-language=C++
+*.c linguist-language=C++
+
